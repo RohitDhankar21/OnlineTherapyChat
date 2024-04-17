@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    background-color: grey;
+    background-image: url("/images/4321767.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+}
+
+#div1{
+    margin-top: 200px;
+}
+
+form{
+    font-size: 90px;
+    font-weight:bold;
+
+}
+
+#rn{
+
+    display: inline;
+    margin-top: 100 px;
+}
+
+#create-form {
+    margin-bottom: 0px;
+}
+
+#create-form label {
+    margin-top: 90px;
+    display: inline;
+    font-size: 40px;
+}
+
+#create-form input[type="text"] {
+    display: inline;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100px;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+#create-form input[type="submit"] {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(112,199,229, 0.5);
+    color: #fff;
+    border: none;
+    height: 40px;
+    margin-left:  0px;
+    margin-right: 50px;
+    border-radius: 8px;
+    padding: auto; 
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#create-form input[type="submit"]:hover {
+    background-color: rgba(125,187,224,255);
+}
+
+#room-list {
+    display: block;
+    text-align: left;
+    margin-top: 220px;
+    margin-left: 10px;
+}
+
+#room-list h2 {
+    display: block;
+    font-size: 40px;
+}
+
+#room-list-ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#room-list-ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#room-list-ul li:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+}

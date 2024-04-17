@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    background-image: url("/images/4321767.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+}
+
+
+#vp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue ;
+}
+
+#lp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: turquoise;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#videos {
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 10px)); /* Two columns, each taking up 50% width with a margin of 10px */
+    gap: 20px; /* Margin between the video players */
+}
+
+.video-player {
+    background-color: black;
+    width: 960px; /* Increased width */
+    height: 540px; /* Increased height */
+}
+
+#user2 {
+    display: none;
+}
+
+#controls {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1em;
+}
+
+.control-container {
+    background-color: rgba(1, 1, 1, 0.5);
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.control-container img {
+    height: 30px;
+    width: 30px;
+}
+
+#leavebutton {
+    background-color: rgb(255, 80, 80, 1);
+}
+
+@media screen and (max-width: 600px) {
+    .smallFrame {
+        height: 80px;
+        width: 120px;
+    }
+
+    .control-container img {
+        height: 20px;
+        width: 20px;
+    }
+}

@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Online Therapy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+    <h1> Online Therapy</h1>
+    </div>
+    <div>
+    <button class="btn" onclick="redirectTo('lobby.html')"> START</button>
+    </div>
+    <script>
+        function redirectTo(page) {
+            let queryString = window.location.search;
+            window.location.href = `${page}${queryString}`;
+        }
+    </script>
+</body>
+</html>
